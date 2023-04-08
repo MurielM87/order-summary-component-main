@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+}
+.container {
+    width: 1440px;
+    margin: auto;
+    min-height: 100%;
+    position: relative;
+}
+#card {
+    width: 35%;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#img_header {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+#card_text {
+    margin: 20px 50px;
+}
+h1 {
+    font-size: 25px;
+}
+p {
+    color: hsl(224, 23%, 55%);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+#card_plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px 5px;
+}
+#icon_price {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+#card_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+#annual_plan {
+    font-weight: 900;
+}
+#annual_price {
+    color: hsl(224, 23%, 55%);
+}
+.change {
+    display: flex;
+    align-items: center;
+}
+.change:hover {
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+#button_payment,
+#button_cancel {
+    width: 100%;
+    padding: 20px 25px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+}
+#button_payment:hover,
+#button_cancel:hover {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px hsl(225, 100%, 94%);
+}
+footer {
+    width: 100%;
+    height: 30px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    #card {
+        width: 85%;
+    }
+    #card_text {
+        margin: 20px;
+    }
+    #img_music {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    #annual_plan {
+        font-size: 15px;
+    }
+    .change:hover {
+        text-decoration: underline;
+    }
+    #button_payment,
+    #button_cancel {
+        margin: 10px 5px;
+    }
+}
